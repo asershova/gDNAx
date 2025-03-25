@@ -305,13 +305,13 @@
               "GAlignmentsList" %in% class(gal) ||
               "TxDb" %in% class(tx)) ## QC
 
-    if (length(intersect(seqlevelsStyle(gal), seqlevelsStyle(tx))) > 0)
-        return(gal)
+    #if (length(intersect(seqlevelsStyle(gal), seqlevelsStyle(tx))) > 0)
+    #    return(gal)
 
-    origseqlevelsstyle <- seqlevelsStyle(gal)[1]
-    targetseqlevelsstyle <- seqlevelsStyle(tx)[1]
+    #origseqlevelsstyle <- seqlevelsStyle(gal)[1]
+    #targetseqlevelsstyle <- seqlevelsStyle(tx)[1]
 
-    seqlevelsStyle(gal) <- seqlevelsStyle(tx)[1]
+    #seqlevelsStyle(gal) <- seqlevelsStyle(tx)[1]
     if (is.na(genome(gal)[1]))
       genome(gal) <- genome(tx)
 
