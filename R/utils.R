@@ -310,7 +310,7 @@
 
     #origseqlevelsstyle <- seqlevelsStyle(gal)[1]
     #targetseqlevelsstyle <- seqlevelsStyle(tx)[1]
-
+    print("==== seqlevelstyle disabled ====")
     #seqlevelsStyle(gal) <- seqlevelsStyle(tx)[1]
     if (is.na(genome(gal)[1]))
       genome(gal) <- genome(tx)
